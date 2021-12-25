@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Assignment 4: Shaders</title>
+    <link rel="stylesheet" type="text/css" href="./assets/common.css" media="screen" />
+    <script src="./utils/throttle.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body >
+    <div class="description">
+        First shader is Checkboard, second is Swiss Cheese, third is Ripple effect. Move the scale to view changes. Thank you!
+    </div>
+    <div>Pick a shader effect: 
+        <button id="effect1" class="button" onclick="onEffect1();">Checkboard</button>		
+        <button id="effect2" class="button" onclick="onEffect2();">Swiss Cheese</button>		
+        <button id="effect3" class="button" onclick="onEffect3();">Ripple
+            
+        </button>		
+        <button id="effect4" class="button" onclick="onEffect4();">Extra Credit</button>		
+    </div>
+           
+    <div>
+        <label for="number">Number (0..1): </label>
+        <input id="number" type="range" name="number" min="0" max="1" value="0" step="0.05">
+    </div>
+    <div id="drawing"></div>
+
+<script type="module" src="./src/app.ts"></script>
+</body>
+</html>

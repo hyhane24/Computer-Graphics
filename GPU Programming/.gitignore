@@ -1,0 +1,6 @@
+.DSdore
+node_modules
+.settings
+package-lock.json
+npm-debug.log
+dist
